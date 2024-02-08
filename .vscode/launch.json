@@ -1,43 +1,19 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": "Dart & Flutter",
-            "request": "launch",
-            "type": "dart",
-            "program": "${workspaceFolder}/lib/main.dart",  // Specify the entry point Dart file
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "dart: build",
-            "stopOnEntry": false,
-            "serverReadyAction": {
-                "action": "openExternally",
-                "pattern": "\\s+at (\\S+):\\d+",
-                "uriFormat": "file://$1",
-                "delay": 4000
-            },
-            "sourceMapPathOverrides": {
-                "package:": "file://${workspaceFolder}/lib/"
-            }
-        },
-        {
-            "name": "Launch All Dart Files",
-            "request": "launch",
-            "type": "dart",
-            "program": "E:/Assignment 4/Q16.dart",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "dart: build",
-            "stopOnEntry": false,
-            "serverReadyAction": {
-                "action": "openExternally",
-                "pattern": "\\s+at (\\S+):\\d+",
-                "uriFormat": "file://$1",
-                "delay": 4000
-            },
-            "sourceMapPathOverrides": {
-                "package:": "file://${workspaceFolder}/lib/"
-            }
+      {
+        "name": "Dart",
+        "request": "launch",
+        "type": "dart",
+        "program": "E:/Assignment 4/Q17.dart",  // Specify the entry point of your Dart program relative to the workspace folder
+        "args": [],                  // Optional: Command line arguments for your program
+        "cwd": "${workspaceFolder}",  // Optional: Current working directory
+        "preLaunchTask": "dart build", // Optional: Build task to run before launching the program
+        "stopOnEntry": false,
+        "sourceMapPathOverrides": {
+          "file:///mnt/": "file://${workspaceFolder}/"
         }
+      }
     ]
-}
+  }
+  
