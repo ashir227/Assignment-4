@@ -5,11 +5,30 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "E:/Assignment 4/Q14.dart", // Adjust the path to your main Dart file
-            "args": [], // Add command-line arguments if needed
+            "program": "${workspaceFolder}/lib/main.dart",  // Specify the entry point Dart file
+            "args": [],
             "cwd": "${workspaceFolder}",
-            "stopOnEntry": false,
             "preLaunchTask": "dart: build",
+            "stopOnEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\s+at (\\S+):\\d+",
+                "uriFormat": "file://$1",
+                "delay": 4000
+            },
+            "sourceMapPathOverrides": {
+                "package:": "file://${workspaceFolder}/lib/"
+            }
+        },
+        {
+            "name": "Launch All Dart Files",
+            "request": "launch",
+            "type": "dart",
+            "program": "E:/Assignment 4/Q16.dart",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "dart: build",
+            "stopOnEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\s+at (\\S+):\\d+",
